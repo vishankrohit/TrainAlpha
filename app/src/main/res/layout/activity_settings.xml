@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/StartingLayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="18dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:id="@+id/textSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/saira_bold"
+                android:text="Settings"
+                android:textColor="#F2FFFFFF"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StartingLayout"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/textUserInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:fontFamily="@font/saira_medium"
+                android:text="User Info"
+                android:textColor="#CCFFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/userSettingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textUserInfo"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="24dp">
+
+                <RelativeLayout
+                    android:id="@+id/userSetting"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/settings_circles"
+                    android:elevation="16dp">
+
+                    <ImageView
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_user_settings" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/userSetting"
+                    android:fontFamily="@font/saira_medium"
+                    android:textColor="#E6FFFFFF"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/emailSettingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userSettingLayout"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="24dp">
+
+                <RelativeLayout
+                    android:id="@+id/emailSetting"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/settings_circles"
+                    android:elevation="16dp">
+
+                    <ImageView
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_mail_settings" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/emailSetting"
+                    android:fontFamily="@font/saira_medium"
+                    android:textColor="#E6FFFFFF"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/bmiSettingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailSettingLayout"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="24dp">
+
+                <RelativeLayout
+                    android:id="@+id/bmiSetting"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/settings_circles"
+                    android:elevation="16dp">
+
+                    <ImageView
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_dumbbell_settings" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvBmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/bmiSetting"
+                    android:fontFamily="@font/saira_medium"
+                    android:textColor="#E6FFFFFF"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/editSettingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bmiSettingLayout"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="24dp">
+
+                <RelativeLayout
+                    android:id="@+id/editSetting"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/settings_circles"
+                    android:elevation="16dp">
+
+                    <ImageView
+                        android:layout_width="21sp"
+                        android:layout_height="21sp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_details_settings" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/editSetting"
+                    android:fontFamily="@font/saira_medium"
+                    android:text="Edit details"
+                    android:textColor="#E6FFFFFF"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_arrow_settings" />
+
+                <Button
+                    android:id="@+id/btnEditDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/transparent_button" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textSupportUS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editSettingLayout"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/saira_medium"
+                android:text="Support Us"
+                android:textColor="#CCFFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/RateSettingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSupportUS"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="24dp">
+
+                <RelativeLayout
+                    android:id="@+id/RateSetting"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/settings_circles"
+                    android:elevation="16dp">
+
+                    <ImageView
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_star_settings" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/RateSetting"
+                    android:fontFamily="@font/saira_medium"
+                    android:text="Rate us"
+                    android:textColor="#E6FFFFFF"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_arrow_settings" />
+
+                <Button
+                    android:id="@+id/btnRateUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/transparent_button" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shareSettingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RateSettingLayout"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="24dp">
+
+                <RelativeLayout
+                    android:id="@+id/shareSetting"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/settings_circles"
+                    android:elevation="16dp">
+
+                    <ImageView
+                        android:layout_width="19sp"
+                        android:layout_height="19sp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_share_settings" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/shareSetting"
+                    android:fontFamily="@font/saira_medium"
+                    android:text="Share"
+                    android:textColor="#E6FFFFFF"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_arrow_settings" />
+
+                <Button
+                    android:id="@+id/btnShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/transparent_button" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logoutSettingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shareSettingLayout"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="24dp">
+
+                <RelativeLayout
+                    android:id="@+id/logoutSetting"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/settings_circles"
+                    android:elevation="16dp">
+
+                    <ImageView
+                        android:layout_width="19sp"
+                        android:layout_height="19sp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_logout_settings" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/logoutSetting"
+                    android:fontFamily="@font/saira_medium"
+                    android:text="Logout"
+                    android:textColor="#E6FFFFFF"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_arrow_settings" />
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/transparent_button" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".WorkoutActivity">
+
+
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/workout_img" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/black_white_gradient" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/black_white_gradient_two" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="24dp">
+
+        <ImageView
+            android:id="@+id/about"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/question_icon" />
+
+        <ImageView
+            android:id="@+id/video"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/about"
+            android:layout_centerVertical="true"
+            android:src="@drawable/youtube_icon" />
+        <ImageView
+            android:id="@+id/music"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/video"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_music" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextButtonLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvExerciseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/bebasneue_regular"
+            android:text="Exercise Name"
+            android:textColor="@color/white"
+            android:textSize="42sp" />
+
+        <TextView
+            android:id="@+id/tvRepsWorkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvExerciseName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/bebasneue_regular"
+            android:text="x14"
+            android:textColor="@color/white"
+            android:textSize="42sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nextButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/completed_btn">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/done_icon" />
+
+        <Button
+            android:id="@+id/btnNextExercise"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent_button"
+            android:text="@string/blank" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

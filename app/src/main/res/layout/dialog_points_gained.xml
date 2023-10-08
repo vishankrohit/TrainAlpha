@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="300dp"
+    android:layout_height="340dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="25dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color">
+            <ImageView
+                android:id="@+id/ic_running"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_running_green"/>
+            <RelativeLayout
+                android:id="@+id/textLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-12dp"
+                android:layout_below="@+id/ic_running"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:id="@+id/tvPointsDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+200 points"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#F2FFFFFF"
+                    android:textSize="36sp"
+                    android:fontFamily="@font/saira_condensed_extrabold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPointsDialog"
+                    android:text="You can use points to unlock\nworkouts."
+                    android:textColor="#CCFFFFFF"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/saira_condensed_extrabold"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="238dp"
+                android:layout_height="49dp"
+                android:background="@drawable/green_btn"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp">
+
+                <TextView
+                    android:id="@+id/tvCloseDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="CLOSE"
+                    android:fontFamily="@font/saira_condensed_extrabold"
+                    android:textAllCaps="true"
+                    android:textColor="#2DCF6F"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btnCloseDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/transparent_button"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

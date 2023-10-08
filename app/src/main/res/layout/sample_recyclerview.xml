@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="4dp"
+    android:elevation="20dp"
+    android:layout_marginBottom="4dp"
+    android:layout_height="98dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/exercise_list_bg">
+
+            <Button
+                android:id="@+id/btnListCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/transparent_button"
+                android:text="@string/blank" />
+
+            <RelativeLayout
+                android:id="@+id/lineLayout"
+                android:layout_width="4dp"
+                android:layout_height="78dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/primary_gradient_1" />
+
+            <TextView
+                android:id="@+id/tvExerciseNamePreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxWidth="190dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/roboto"
+                android:text="Push-ups"
+                android:textColor="#BFFFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp">
+
+                <TextView
+                    android:id="@+id/tvRepsPreview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/anton"
+                    android:text="18"
+                    android:textColor="#CCFFFFFF"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_toRightOf="@+id/tvRepsPreview"
+                    android:fontFamily="@font/scada"
+                    android:text="reps"
+                    android:textAllCaps="true"
+                    android:textColor="#A6FFFFFF"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

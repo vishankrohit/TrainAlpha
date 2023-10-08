@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_gradient_1">#7F24F4</color>
+    <color name="primary_gradient_2">#8A2BE2</color>
+    <color name="background_color">#121212</color>
+    <color name="black">#FF000000</color>
+    <color name="one_one">#8EF20F</color>
+    <color name="one_two">#0FC9F2</color>
+    <color name="one_three">#FFEA2C</color>
+    <color name="one_four">#2BFA59</color>
+    <color name="two_one">#FBC70F</color>
+    <color name="two_two">#5685FF</color>
+    <color name="two_three">#18D064</color>
+    <color name="two_four">#C242FF</color>
+    <color name="three_one">#8A2BE2</color>
+    <color name="three_two">#F5AF19</color>
+    <color name="three_three">#018BBB</color>
+    <color name="three_four">#5EE42E</color>
+    <color name="long_purple">#7600ED</color>
+    <color name="long_blue">#4776E6</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

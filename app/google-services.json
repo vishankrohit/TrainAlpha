@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "521072407164",
+    "firebase_url": "https://workout-app-1ca2a-default-rtdb.firebaseio.com",
+    "project_id": "workout-app-1ca2a",
+    "storage_bucket": "workout-app-1ca2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521072407164:android:1b51be59eb42d27d72cff9",
+        "android_client_info": {
+          "package_name": "com.example.workoutapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521072407164-e6cn04ddhol3e4upb8ggg7juikimgthr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.workoutapp",
+            "certificate_hash": "adf5999676b548f7d12500ba241926eeb8fa3e8e"
+          }
+        },
+        {
+          "client_id": "521072407164-nu06um5vcftmisnn1t3tr5ts5c80sj9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIjcY05w6oksmJqi0IRZqEEuHoT5fTYaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521072407164-nu06um5vcftmisnn1t3tr5ts5c80sj9d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521072407164:android:5e5d96be3e4527d672cff9",
+        "android_client_info": {
+          "package_name": "com.livcorp.trainalpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521072407164-s0v9et0f4j2p2kq6s4g2k74lcfs86kis.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.livcorp.trainalpha",
+            "certificate_hash": "adf5999676b548f7d12500ba241926eeb8fa3e8e"
+          }
+        },
+        {
+          "client_id": "521072407164-nu06um5vcftmisnn1t3tr5ts5c80sj9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIjcY05w6oksmJqi0IRZqEEuHoT5fTYaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521072407164-nu06um5vcftmisnn1t3tr5ts5c80sj9d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

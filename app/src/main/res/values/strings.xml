@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TrainAlpha</string>
+    <string name="blank" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
+    <string name="i_m_in_shape">I’m in Shape</string>
+    <string name="i_have_little_experience_working_out_and_have_not_yet_mastered_basic_exercises_such_as_push_ups_or_pull_ups">I have little experience working out and have not yet mastered basic exercises such as push-ups or pull-ups</string>
+    <string name="rookie">Rookie</string>
+</resources>

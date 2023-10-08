@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp">
+
+    <ImageView
+        android:id="@+id/toolbarBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/preview_toolbar_img"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/tvWorkoutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/scada"
+            android:text="workout"
+            android:textAllCaps="true"
+            android:textColor="#99FFFFFF"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/workoutName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWorkoutText"
+            android:textSize="48sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="-12dp"
+            android:textAllCaps="true"
+            android:text="barbara"
+            android:fontFamily="@font/impact"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/workoutName"
+            android:layout_marginTop="-12dp">
+            <ImageView
+                android:id="@+id/clock_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/clock_img_card"/>
+            <TextView
+                android:id="@+id/workoutTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/clock_icon"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/saira_condensed_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:text="45"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/workoutTime"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/saira_condensed_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:text="minutes"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

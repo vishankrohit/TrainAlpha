@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.livcorp.trainalpha.BmiActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tut4_img"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/bebasneue_regular"
+        android:text="let’s find some workouts\nfor you"
+        android:textColor="#E6FFFFFF"
+        android:textSize="36sp" />
+
+    <RelativeLayout
+        android:id="@+id/MainInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/GenderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/MaleLayout"
+                android:layout_width="142dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/male_img" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gender_btn_background_male" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bebasneue_regular"
+                    android:text="Male"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/level_button_selector"
+                    android:text="@string/blank" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/FemaleLayout"
+                android:layout_width="142dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/MaleLayout">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/female_img" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gender_btn_background_female" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bebasneue_regular"
+                    android:text="Female"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/level_button_selector"
+                    android:text="@string/blank" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/Weight"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/GenderLayout"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/saira_semibold"
+            android:hint="Weight in kg"
+            android:inputType="numberDecimal"
+            android:paddingStart="18dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Height"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/Weight"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/saira_semibold"
+            android:hint="Height in cm"
+            android:inputType="numberDecimal"
+            android:paddingStart="18dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Age"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/Height"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/saira_semibold"
+            android:hint="Age"
+            android:inputType="number"
+            android:paddingStart="18dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/MainInputLayout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+
+            <RelativeLayout
+                android:id="@+id/SignUpBtnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/start_btn">
+
+                <TextView
+                    android:id="@+id/tvNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/bebasneue_regular"
+                    android:gravity="center"
+                    android:text="Next"
+                    android:textColor="@color/black"
+                    android:textSize="34sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

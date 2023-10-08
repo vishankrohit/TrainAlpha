@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".LevelActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tut3_img" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/bebasneue_regular"
+        android:text="What is your\nlevel?"
+        android:textColor="#E6FFFFFF"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/radio_not_selected">
+
+            <Button
+                android:id="@+id/btnRookie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/level_button_selector"
+                android:text="Rookie"
+                android:textColor="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/tvRookie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/rookie"
+                android:textColor="#CCFFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRookie"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="24dp"
+                android:fontFamily="@font/roboto"
+                android:text="I have little experience working out and have not yet mastered basic exercises such as push-ups or pull-ups"
+                android:textColor="#8C8C8C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/radio_not_selected">
+
+            <Button
+                android:id="@+id/btnInShape"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/level_button_selector"
+                android:button="@android:color/transparent"
+                android:text="In shape"
+                android:textColor="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/tvInShape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/i_m_in_shape"
+                android:textColor="#CCFFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInShape"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="24dp"
+                android:fontFamily="@font/roboto"
+                android:text="I’m able to perform the basic exercises with the correct technique and some simple\ntricks"
+                android:textColor="#8C8C8C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/radio_not_selected">
+
+            <Button
+                android:id="@+id/btnAdvanced"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/level_button_selector"
+                android:button="@android:color/transparent"
+                android:text="Advanced"
+                android:textColor="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/tvAdvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto"
+                android:text="Advanced"
+                android:textColor="#CCFFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAdvanced"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="24dp"
+                android:fontFamily="@font/roboto"
+                android:text="I’m able to do more complex variations of\nthe basic exercises and some advanced\nexercises"
+                android:textColor="#8C8C8C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttons"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/SignUpBtnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/start_btn">
+
+            <TextView
+                android:id="@+id/tvNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/bebasneue_regular"
+                android:gravity="center"
+                android:text="Skip"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

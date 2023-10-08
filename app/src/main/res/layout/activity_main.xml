@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/infoArea"
+                android:layout_width="match_parent"
+                android:layout_height="249dp"
+                android:background="@drawable/main_toolbar"
+                android:elevation="50dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/FirstRelLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginRight="24dp">
+
+                    <ImageView
+                        android:id="@+id/settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_settings"
+                        app:tint="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tvYourStats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/saira_condensed_extrabold"
+                        android:text="your stats"
+                        android:textAllCaps="true"
+                        android:textColor="#F2FFFFFF"
+                        android:textSize="30dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/FirstRelLayout"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="24dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/dumbbellLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/dumbbell"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/stats_icon_bg"
+                            android:elevation="8dp">
+
+                            <ImageView
+                                android:layout_width="25sp"
+                                android:layout_height="25sp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/dumbbell_icon" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/workoutsCompleted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="-8dp"
+                            android:layout_toRightOf="@+id/dumbbell"
+                            android:fontFamily="@font/anton"
+                            android:textColor="#00B4FF"
+                            android:textSize="32sp" />
+
+                        <TextView
+                            android:id="@+id/tvTextdumbbell"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@id/workoutsCompleted"
+                            android:fontFamily="@font/saira_regular"
+                            android:text="workouts\ncompleted"
+                            android:textAllCaps="true"
+                            android:textColor="#989898"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/clockLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dumbbellLayout"
+                        android:layout_marginTop="24dp">
+
+                        <RelativeLayout
+                            android:id="@+id/clock"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/stats_icon_bg"
+                            android:elevation="8dp">
+
+                            <ImageView
+                                android:layout_width="25sp"
+                                android:layout_height="25sp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/clock_icon" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/timeWorkedOut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="-8dp"
+                            android:layout_toRightOf="@+id/clock"
+                            android:fontFamily="@font/anton"
+                            android:textColor="#FD2476"
+                            android:textSize="32sp" />
+
+                        <TextView
+                            android:id="@+id/tvTextClock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@id/timeWorkedOut"
+                            android:fontFamily="@font/saira_regular"
+                            android:text="workout\nminutes"
+                            android:textAllCaps="true"
+                            android:textColor="#989898"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:id="@+id/fireLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/fire"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/stats_icon_bg"
+                                android:elevation="8dp">
+
+                                <ImageView
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/fire_icon" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/caloriesBurnt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="-8dp"
+                                android:layout_toRightOf="@+id/fire"
+                                android:fontFamily="@font/anton"
+                                android:textColor="#FE862D"
+                                android:textSize="32sp" />
+
+                            <TextView
+                                android:id="@+id/tvTextFire"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_toRightOf="@id/caloriesBurnt"
+                                android:fontFamily="@font/saira_regular"
+                                android:text="burned\nkcal"
+                                android:textAllCaps="true"
+                                android:textColor="#989898"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/starLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp">
+
+                            <RelativeLayout
+                                android:id="@+id/stars"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/stats_icon_bg"
+                                android:elevation="8dp">
+
+                                <ImageView
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/star_icon" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/pointsEarned"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="-8dp"
+                                android:layout_toRightOf="@+id/stars"
+                                android:fontFamily="@font/anton"
+                                android:textColor="#18D064"
+                                android:textSize="32sp" />
+
+                            <TextView
+                                android:id="@+id/tvTextStars"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_toRightOf="@id/pointsEarned"
+                                android:fontFamily="@font/saira_regular"
+                                android:text="points\nearned"
+                                android:textAllCaps="true"
+                                android:textColor="#989898"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RVabove1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infoArea"
+                android:layout_marginTop="32dp">
+
+                <TextView
+                    android:id="@+id/tvForYou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:fontFamily="@font/saira_condensed_extrabold"
+                    android:text="For you"
+                    android:textAllCaps="true"
+                    android:textColor="#F2FFFFFF"
+                    android:textSize="30dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/see_all_btn_bg">
+
+                    <TextView
+                        android:id="@+id/tvSeeAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="16dp"
+                        android:fontFamily="@font/saira_regular"
+                        android:paddingBottom="8dp"
+                        android:text="see all"
+                        android:textAllCaps="true"
+                        android:textColor="#E62DCF6F"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView1"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:layout_below="@+id/RVabove1"
+                android:layout_marginTop="18dp"
+                tools:listitem="@layout/sample_recyclerview_one" />
+
+            <RelativeLayout
+                android:id="@+id/RV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerView1"
+                android:layout_marginTop="32dp">
+
+                <TextView
+                    android:id="@+id/BodyFocus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:fontFamily="@font/saira_condensed_extrabold"
+                    android:text="Popular"
+                    android:textAllCaps="true"
+                    android:textColor="#F2FFFFFF"
+                    android:textSize="30dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/see_all_btn_bg">
+
+                    <TextView
+                        android:id="@+id/tvSeeAll1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="see all"
+                        android:fontFamily="@font/saira_regular"
+                        android:textAllCaps="true"
+                        android:textColor="#E62DCF6F"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:layout_below="@+id/RV2"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="70dp"
+                tools:listitem="@layout/sample_recyclerview_one" />
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="30dp"
+        android:background="@drawable/bottom_nav_background"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@drawable/bottom_nav_icon_colors"
+        app:menu="@menu/menu_navigation"/>
+
+</RelativeLayout>

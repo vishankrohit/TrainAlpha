@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="360dp"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color">
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/skip_icon"
+                app:tint="#FFFFFF"/>
+
+            <ImageView
+                android:id="@+id/ic_running"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_running_green" />
+
+            <TextView
+                android:id="@+id/tvPointsDialog"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/ic_running"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/saira_condensed_extrabold"
+                android:text="This workout is locked"
+                android:textColor="#F2FFFFFF"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/tvCostDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tvPointsDialog"
+                android:text="You need 200 points to unlock\nthis workout"
+                android:textColor="#CCFFFFFF"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:fontFamily="@font/saira_condensed_extrabold"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/UsePointsLayout"
+                android:layout_width="256dp"
+                android:layout_height="43dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/dialog_button_background">
+
+                <TextView
+                    android:id="@+id/textUsePoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/saira_condensed_extrabold"
+                    android:text="Use Points"
+                    android:textAllCaps="true"
+                    android:textColor="#2DCF6F"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnUsePoints"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/transparent_button" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

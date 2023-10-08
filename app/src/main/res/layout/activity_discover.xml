@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".DiscoverActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/StartingLayout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="18dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:id="@+id/textSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/saira_bold"
+                    android:text="Discover"
+                    android:textColor="#F2FFFFFF"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardFullbody"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_below="@+id/StartingLayout">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/one_card_img"
+                    android:foregroundGravity="center_horizontal"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <TextView
+                        android:id="@+id/textFullbody"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/saira_bold"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/white"
+                        android:text="FULL-BODY"/>
+
+                    <TextView
+                        android:id="@+id/textFullbodyDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textFullbody"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/saira_bold"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#D9FFFFFF"
+                        android:text="Quick top to bottom workout."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textFullbodyDesc"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/saira_bold"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#D9FFFFFF"
+                        android:text="10 min"/>
+
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/btnFullbody"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/transparent_button"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textHIIT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/saira_bold"
+                android:text="HIIT Workouts"
+                android:textColor="#F2FFFFFF"
+                android:textSize="22sp"
+                android:layout_below="@+id/cardFullbody"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="24dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/discover_cards"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@+id/textHIIT"
+                android:layout_marginTop="18dp"
+                tools:listitem="@layout/sample_recyclerview_discover"/>
+
+            <TextView
+                android:id="@+id/textChallenges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/saira_bold"
+                android:text="Challenges"
+                android:textColor="#F2FFFFFF"
+                android:textSize="22sp"
+                android:layout_below="@+id/discover_cards"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="24dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/longCards"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_below="@id/textChallenges"
+                android:layout_marginTop="18dp"
+                tools:listitem="@layout/sample_recyclerview_long"/>
+
+            <TextView
+                android:id="@+id/textBodyFocus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/saira_bold"
+                android:text="Body Focus"
+                android:textColor="#F2FFFFFF"
+                android:textSize="22sp"
+                android:layout_below="@+id/longCards"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="24dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textBodyFocus"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="70dp"
+                android:layout_centerHorizontal="true">
+                <RelativeLayout
+                    android:id="@+id/chest"
+                    android:layout_width="150dp"
+                    android:layout_height="125dp"
+                    android:background="@drawable/body_focus_btns"
+                    android:elevation="12dp">
+                    <ImageView
+                        android:id="@+id/chest_img"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/chest_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/saira_semibold"
+                        android:textColor="#BFFFFFFF"
+                        android:textSize="18sp"
+                        android:textAllCaps="true"
+                        android:text="CHEST"/>
+                    <Button
+                        android:id="@+id/btnChest"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/transparent_button"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/abs"
+                    android:layout_width="150dp"
+                    android:layout_height="125dp"
+                    android:background="@drawable/body_focus_btns"
+                    android:layout_toRightOf="@id/chest"
+                    android:layout_marginLeft="20dp"
+                    android:elevation="12dp">
+                    <ImageView
+                        android:id="@+id/abs_img"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/abs_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/saira_semibold"
+                        android:textColor="#BFFFFFFF"
+                        android:textSize="18sp"
+                        android:textAllCaps="true"
+                        android:text="Abs"/>
+                    <Button
+                        android:id="@+id/btnAbs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/transparent_button"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/arms"
+                    android:layout_width="150dp"
+                    android:layout_height="125dp"
+                    android:layout_below="@+id/chest"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/body_focus_btns"
+                    android:elevation="12dp">
+                    <ImageView
+                        android:id="@+id/arms_img"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/arms_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/saira_semibold"
+                        android:textColor="#BFFFFFFF"
+                        android:textSize="18sp"
+                        android:textAllCaps="true"
+                        android:text="Arms"/>
+                    <Button
+                        android:id="@+id/btnArms"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/transparent_button"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/legs"
+                    android:layout_width="150dp"
+                    android:layout_height="125dp"
+                    android:background="@drawable/body_focus_btns"
+                    android:layout_below="@+id/abs"
+                    android:layout_toRightOf="@id/arms"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:elevation="12dp">
+                    <ImageView
+                        android:id="@+id/legs_img"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/thighs_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/saira_semibold"
+                        android:textColor="#BFFFFFFF"
+                        android:textSize="18sp"
+                        android:textAllCaps="true"
+                        android:text="Legs"/>
+                    <Button
+                        android:id="@+id/btnLegsCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/transparent_button"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavDiscover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="30dp"
+        android:background="@drawable/bottom_nav_background"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@drawable/bottom_nav_icon_colors"
+        app:menu="@menu/menu_navigation"/>
+
+</RelativeLayout>
